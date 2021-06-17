@@ -10,6 +10,16 @@ input {
 
 body {
   text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+  border: solid saddlebrown 2px;
+  border-radius: 25px;
+  background-image: url("dog.jpg");
+  background-position: left;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-size: contain;
+  /* background-image sourced from pixabay a free for commercial use no attribution required site.*/
 }
 
 form {
@@ -27,11 +37,40 @@ form button {
   margin: auto;
 }
 
+#submit_button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  animation-name: woof;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+@keyframes woof {
+  25%   {background-color: lightblue;}
+  50%  {background-color: salmon;}
+}  
+
+
 ul {
   list-style-type: none;
   line-height: 30px;
+  padding-inline-start: 0px;
 }
 
-.remove-button {
+/* This came with the code from git. I don't see the purpose of it. */
+/* .remove-button {
   margin-left: 10px;
+} */
+
+button {
+  cursor: pointer;
 }
+
+
+
